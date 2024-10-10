@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #66c2ff, #2980b9);
+}
+
+.select-movie {
+    width: 70%;
+}
+
+.seats {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative
+}
+
+.row {
+    display: flex;
+}
+
+.seats-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative
+}
+
+.status {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    font-size: 14px;
+    position: relative;
+    padding: 20px;
+}
+
+.movie-container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.seat-container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.seat {
+    background-color: #fff;
+    height: 26px;
+    width: 32px;
+    margin: 3px;
+    font-size: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: green;
+}
+
+.seat.booked {
+    background-color: #444451;
+}
+
+
+.showcase-seat {
+    background-color: #fff;
+    height: 26px;
+    width: 32px;
+    margin: 3px;
+    font-size: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.showcase-seat.selected {
+    background-color: green;
+}
+
+.showcase-seat.booked {
+    background-color: #444451;
+}
+
+
+
+.screen {
+    background-color: #fff;
+    height: 130px;
+    width: 100%;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 5px rgba(255, 255, 255, 0.7);
+    align-content: center;
+    align-self: center;
+}
+
+.showcase {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+#footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.movie-name-span {
+    color: darkgreen;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative
+}
+
+.footer-col {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative
+}
