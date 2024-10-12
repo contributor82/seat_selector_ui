@@ -1,0 +1,626 @@
+{
+    "movies": [
+        {
+            "movie_id": 1,
+            "movie_name": "Twelve Angry Men"
+        },
+        {
+            "movie_id": 2,
+            "movie_name": "Independence Day"
+        },
+        {
+            "movie_id": 3,
+            "movie_name": "Good Will hunting"
+        },
+        {
+            "movie_id": 4,
+            "movie_name": "The Shawshank redemption"
+        },
+        {
+            "movie_id": 5,
+            "movie_name": "Schindler's List"
+        }
+    ],
+    "seats": [
+        {
+            "id": 1,
+            "seat_id": 1,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 2,
+            "seat_id": 2,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 3,
+            "seat_id": 3,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 4,
+            "seat_id": 4,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 5,
+            "seat_id": 5,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 6,
+            "seat_id": 6,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 7,
+            "seat_id": 7,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 8,
+            "seat_id": 8,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 9,
+            "seat_id": 9,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 10,
+            "seat_id": 10,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 11,
+            "seat_id": 11,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 12,
+            "seat_id": 12,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 13,
+            "seat_id": 13,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 14,
+            "seat_id": 14,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 15,
+            "seat_id": 15,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 16,
+            "seat_id": 16,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 17,
+            "seat_id": 17,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 18,
+            "seat_id": 18,
+            "movie_id": 1,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 19,
+            "seat_id": 19,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 20,
+            "seat_id": 20,
+            "movie_id": 1,
+            "seat_status": "Available"
+        },
+        {
+            "id": 21,
+            "seat_id": 21,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 22,
+            "seat_id": 22,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 23,
+            "seat_id": 23,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 24,
+            "seat_id": 24,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 25,
+            "seat_id": 25,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 26,
+            "seat_id": 6,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 27,
+            "seat_id": 7,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 28,
+            "seat_id": 8,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 29,
+            "seat_id": 9,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 30,
+            "seat_id": 10,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 31,
+            "seat_id": 11,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 32,
+            "seat_id": 12,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 33,
+            "seat_id": 13,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 34,
+            "seat_id": 14,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 35,
+            "seat_id": 15,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 36,
+            "seat_id": 16,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 37,
+            "seat_id": 17,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 38,
+            "seat_id": 18,
+            "movie_id": 2,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 39,
+            "seat_id": 19,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 40,
+            "seat_id": 20,
+            "movie_id": 2,
+            "seat_status": "Available"
+        },
+        {
+            "id": 41,
+            "seat_id": 1,
+            "movie_id": 3,
+            "seat_status": "Available"
+        },
+        {
+            "id": 42,
+            "seat_id": 2,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 43,
+            "seat_id": 3,
+            "movie_id": 3,
+            "seat_status": "Available"
+        },
+        {
+            "id": 44,
+            "seat_id": 4,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 45,
+            "seat_id": 5,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 46,
+            "seat_id": 6,
+            "movie_id": 3,
+            "seat_status": "Available"
+        },
+        {
+            "id": 47,
+            "seat_id": 7,
+            "movie_id": 3,
+            "seat_status": "Available"
+        },
+        {
+            "id": 48,
+            "seat_id": 8,
+            "movie_id": 3,
+            "seat_status": "Available"
+        },
+        {
+            "id": 49,
+            "seat_id": 9,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 50,
+            "seat_id": 10,
+            "movie_id": 3,
+            "seat_status": "Available"
+        },
+        {
+            "id": 51,
+            "seat_id": 11,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 52,
+            "seat_id": 12,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 53,
+            "seat_id": 13,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 54,
+            "seat_id": 14,
+            "movie_id": 3,
+            "seat_status": "Available"
+        },
+        {
+            "id": 55,
+            "seat_id": 15,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 56,
+            "seat_id": 16,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 57,
+            "seat_id": 17,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 58,
+            "seat_id": 18,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 59,
+            "seat_id": 19,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 60,
+            "seat_id": 20,
+            "movie_id": 3,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 61,
+            "seat_id": 1,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 62,
+            "seat_id": 2,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 63,
+            "seat_id": 3,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 64,
+            "seat_id": 4,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 65,
+            "seat_id": 5,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 66,
+            "seat_id": 6,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 67,
+            "seat_id": 7,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 68,
+            "seat_id": 8,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 69,
+            "seat_id": 9,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 70,
+            "seat_id": 10,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 71,
+            "seat_id": 11,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 72,
+            "seat_id": 12,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 73,
+            "seat_id": 13,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 74,
+            "seat_id": 14,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 75,
+            "seat_id": 15,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 76,
+            "seat_id": 16,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 77,
+            "seat_id": 17,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 78,
+            "seat_id": 18,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 79,
+            "seat_id": 19,
+            "movie_id": 4,
+            "seat_status": "Available"
+        },
+        {
+            "id": 80,
+            "seat_id": 20,
+            "movie_id": 4,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 81,
+            "seat_id": 1,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 82,
+            "seat_id": 2,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 83,
+            "seat_id": 3,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 84,
+            "seat_id": 4,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 85,
+            "seat_id": 5,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 86,
+            "seat_id": 6,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 87,
+            "seat_id": 7,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 88,
+            "seat_id": 8,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 89,
+            "seat_id": 9,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 90,
+            "seat_id": 10,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 91,
+            "seat_id": 11,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 92,
+            "seat_id": 12,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 93,
+            "seat_id": 13,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 94,
+            "seat_id": 14,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 95,
+            "seat_id": 15,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 96,
+            "seat_id": 16,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 97,
+            "seat_id": 17,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 98,
+            "seat_id": 18,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        },
+        {
+            "id": 99,
+            "seat_id": 19,
+            "movie_id": 5,
+            "seat_status": "Available"
+        },
+        {
+            "id": 100,
+            "seat_id": 20,
+            "movie_id": 5,
+            "seat_status": "Booked"
+        }
+    ]
+}

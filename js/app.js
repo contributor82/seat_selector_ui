@@ -2,12 +2,10 @@ const movieContainer = document.querySelector(".movie-container");
 const $seatContainer = $("#seatContainer");
 const div = document.querySelector("div");
 const $selectMovie = $("#selectMovie");
-const selectedSeats = div.getElementsByClassName("seat selected");
-const divClasses = ["seat", "seat booked"];
+const selectedSeats = div.getElementsByClassName("seat Selected");
 var selectedSeatsCount = 0;
-
 document.getElementById("seatCount").innerHTML = selectedSeatsCount;
-
+var movie_seats = [];
 // loading movies list from movies csv file.
 // loading seats
 loadMoviesAndSeats = () => {
@@ -15,14 +13,12 @@ loadMoviesAndSeats = () => {
     $.ajax({
         url: API_URL.GET_MOVIES,
         type: API_METHOD.GET,
-        dataType: API_RESPONSE_DATA_TYPE.TEXT,
-        success: (response) => {
-            var movies_rows = response.split('\n');
-            for (var i = 1; i < movies_rows.length - 1; i++) {
-                var cols = movies_rows[i].split(',');
-                $selectMovie.append("<option value = '" + cols[0] + "' >" + cols[1] + "</option>");
+        dataType: API_RESPONSE_DATA_TYPE.JSON,
+        success: (movies_seats) => {
+            for (var i = 0; i < movies_seats.movies.length; i++) {
+                $selectMovie.append("<option value = '" + movies_seats.movies[i].movie_id + "' >" + movies_seats.movies[i].movie_name + "</option>");
             }
-
+            movie_seats = movies_seats.seats;
             loadSeats();
         },
         error: (error) => {
@@ -31,22 +27,40 @@ loadMoviesAndSeats = () => {
     });
 }
 
+
+
 // loading movie seats
 loadSeats = () => {
 
     if ($selectMovie.val() != "") {
-        for (var counter = 0; counter < 3; counter++) {
+        for (var counter = 0; counter < 2; counter++) {
             $seatContainer.append("<div class='seats-row' id='seatRow" + counter + "'></div>");
         }
 
+        var selectedMovieSeats = []
+        for (var i = 0; i < movie_seats.length; i++) {
+            if (movie_seats[i].movie_id == $selectMovie.val()) {
+                selectedMovieSeats.push(movie_seats[i]);
+            }
+        }
+
         const seatsRowsCreated = document.getElementsByClassName("seats-row");
+        var seat_index = 0;
         for (var index = 0; index < seatsRowsCreated.length; index++) {
-            for (var seats = 0; seats < 10; seats++) {
-                var $seatRow = document.getElementById(seatsRowsCreated[index].id);
+            var $seatRow = document.getElementById(seatsRowsCreated[index].id);
+            var seatCounter = 0;
+            while (seatCounter < 10) {
+
                 var div = document.createElement('div');
-                var random = Math.floor(Math.random() * divClasses.length);
-                div.className = divClasses[random];
+                div.id = selectedMovieSeats[seat_index].seat_id;
+                if (selectedMovieSeats[seat_index].seat_status == "Available")
+                    div.className = "seat";
+                else if (selectedMovieSeats[seat_index].seat_status == "Booked")
+                    div.className = "seat Booked";
+
                 $seatRow.appendChild(div);
+                seatCounter++;
+                seat_index++;
             }
         }
     }
@@ -71,7 +85,7 @@ updateSelectedSeatsCount = (e) => {
     if (e.target.className == "seat") {
         selectedSeatsCount--;
     }
-    else if (e.target.className == "seat selected") {
+    else if (e.target.className == "seat Selected") {
         selectedSeatsCount++;
     }
     document.getElementById("seatCount").innerHTML = selectedSeatsCount;
@@ -81,9 +95,9 @@ updateSelectedSeatsCount = (e) => {
 movieContainer.addEventListener("click", (e) => {
     if ($selectMovie.val() != "" &&
         e.target.classList.contains("seat") &&
-        !e.target.classList.contains("booked")
+        !e.target.classList.contains("Booked")
     ) {
-        e.target.classList.toggle("selected");
+        e.target.classList.toggle("Selected");
         updateSelectedSeatsCount(e);
     }
 });

@@ -1,5 +1,5 @@
 var API_URL = {
-    GET_MOVIES: 'movies.csv'
+    GET_MOVIES: 'movies_seats.json'
 };
 
 var API_METHOD = {
