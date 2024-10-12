@@ -1,4 +1,4 @@
-# Movie Seat selector
+# Movie Seat selector UI
 
 # Summary
 
