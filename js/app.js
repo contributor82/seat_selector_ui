@@ -2,7 +2,7 @@ const movieContainer = document.querySelector(".movie-container");
 const $seatContainer = $("#seatContainer");
 const div = document.querySelector("div");
 const $selectMovie = $("#selectMovie");
-const selectedSeats = div.getElementsByClassName("seat Selected");
+const selectedSeats = div.getElementsByClassName(DIV_CLASS_NAMES_FOR_SEATS.SEAT_SELECTED);
 var selectedSeatsCount = 0;
 document.getElementById("seatCount").innerHTML = selectedSeatsCount;
 var movie_seats = [];
@@ -53,10 +53,10 @@ loadSeats = () => {
 
                 var div = document.createElement('div');
                 div.id = selectedMovieSeats[seat_index].seat_id;
-                if (selectedMovieSeats[seat_index].seat_status == "Available")
-                    div.className = "seat";
-                else if (selectedMovieSeats[seat_index].seat_status == "Booked")
-                    div.className = "seat Booked";
+                if (selectedMovieSeats[seat_index].seat_status == SEAT_STATUS.AVAILABLE)
+                    div.className = DIV_CLASS_NAMES_FOR_SEATS.SEAT;
+                else if (selectedMovieSeats[seat_index].seat_status == SEAT_STATUS.BOOKED)
+                    div.className = DIV_CLASS_NAMES_FOR_SEATS.SEAT_BOOKED;
 
                 $seatRow.appendChild(div);
                 seatCounter++;
@@ -85,7 +85,7 @@ updateSelectedSeatsCount = (e) => {
     if (e.target.className == "seat") {
         selectedSeatsCount--;
     }
-    else if (e.target.className == "seat Selected") {
+    else if (e.target.className == DIV_CLASS_NAMES_FOR_SEATS.SEAT_SELECTED) {
         selectedSeatsCount++;
     }
     document.getElementById("seatCount").innerHTML = selectedSeatsCount;
@@ -95,9 +95,9 @@ updateSelectedSeatsCount = (e) => {
 movieContainer.addEventListener("click", (e) => {
     if ($selectMovie.val() != "" &&
         e.target.classList.contains("seat") &&
-        !e.target.classList.contains("Booked")
+        !e.target.classList.contains(SEAT_STATUS.BOOKED)
     ) {
-        e.target.classList.toggle("Selected");
+        e.target.classList.toggle(SEAT_STATUS.SELECTED);
         updateSelectedSeatsCount(e);
     }
 });
